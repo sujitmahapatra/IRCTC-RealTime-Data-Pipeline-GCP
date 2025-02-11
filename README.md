@@ -38,5 +38,23 @@ The **IRCTC Real-Time Data Pipeline** is a cloud-based data processing system de
 
 ---
 
-## 🏗️ Project Structure  
+## 🗄️ BigQuery Schema
+
+| Column Name       | Data Type   | Description                          |
+|------------------|------------|--------------------------------------|
+| `row_key`        | STRING      | Unique identifier for each record   |
+| `name`           | STRING      | Passenger's name                    |
+| `age`            | INT64       | Passenger's age                     |
+| `email`          | STRING      | Passenger's email address           |
+| `join_date`      | DATE        | Date when the passenger joined      |
+| `last_login`     | TIMESTAMP   | Last login timestamp                |
+| `loyalty_points` | INT64       | Loyalty points earned               |
+| `account_balance`| FLOAT64     | Account balance in INR              |
+| `is_active`      | BOOL        | Indicates if the account is active  |
+| `inserted_at`    | TIMESTAMP   | Timestamp when the record was inserted |
+| `updated_at`     | TIMESTAMP   | Last updated timestamp              |
+| `loyalty_status` | STRING      | Loyalty membership status           |
+| `account_age_days` | INT64     | Total days since account creation   |
+
+
 
